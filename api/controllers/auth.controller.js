@@ -46,6 +46,7 @@ exports.SignIn = async (req, res, next) => {
       message: "Đăng nhập thành công!",
       email,
       phone: infoUser.phone,
+      role: infoUser.role,
       token,
     });
   } catch (e) {
